@@ -5,23 +5,29 @@ import HomeLayout from '../layouts/home';
 export default function Home() {
     const menus = [
         {
-            "title": "Persegi",
-            "url": "/bangun-datar/persegi"
+            "title": "Luas Persegi",
+            "url": "/bangun-datar/luas-persegi"
         },
         {
-            "title": "Persegi Panjang",
-            "url": "/bangun-datar/persegi-panjang"
+            "title": "Luas Persegi Panjang",
+            "url": "/bangun-datar/luas-persegi-panjang"
         }
     ];
 
     return (
         <HomeLayout
             pageContent={
-                menus.map(menu => {
-                    return (
-                        <LinkToPageButton title={menu.title} url={menu.url} />
-                    );
-                })
+                <>
+                    <div className="text-center my-3">
+                        <h1 className="display-3 fw-bold">Rumus Matematika</h1>
+                        <p>Berisi daftar rumus-rumus yang ada pada Matematika</p>
+                    </div>
+                    {menus.map(menu => {
+                        return (
+                            <LinkToPageButton title={menu.title} url={menu.url} />
+                        );
+                    })}
+                </>
             }
         />
     )
