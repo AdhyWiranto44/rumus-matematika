@@ -5,11 +5,19 @@ import Title from "../../components/Title";
 import Input from "../../components/Input";
 import SubmitButton from "../../components/SubmitButton";
 import Result from "../../components/Result";
+import Image from "next/image";
+import DescriptionButton from "../../components/DescriptionButton";
+import FormulaModal from "../../components/FormulaModal";
+import PageLayout from "../../layouts/Page";
 
 
 export default function LuasPersegi() {
     const [side, setSide] = useState(0.0);
     const [result, setResult] = useState(0.0);
+
+    const meta = {
+        "img": "persegi.jpg"
+    }
 
     function calculate() {
         let result = parseFloat(side * side);
@@ -20,10 +28,15 @@ export default function LuasPersegi() {
         <HomeLayout
             pageContent={
                 <>
-                    <HomeButton />
-                    <Title title="Luas Persegi" />
+                    <div className="row mb-3">
+                        <div className="col">
+                            <HomeButton />
+                            <DescriptionButton />
+                        </div>
+                    </div>
                     <div className="row">
-                        <div className="col-md-3">
+                        <div className="col-md-4">
+                            <Title title="Luas Persegi" />
                             <Input
                                 labelName={"Sisi"}
                                 inputName={"side"}
@@ -34,9 +47,14 @@ export default function LuasPersegi() {
                                 }
                             />
                             <SubmitButton onClick={calculate} />
+                            <Result result={result} />
+                        </div>
+                        <div className="col-md-8">
+                            <h5 className="text-center text-uppercase">Gambar</h5>
+                            <img className="d-block mx-auto w-50" src={`/img/${meta.img}`} alt={meta.img} />
                         </div>
                     </div>
-                    <Result result={result} />
+                    <FormulaModal />
                 </>
             }
         />
