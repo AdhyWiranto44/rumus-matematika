@@ -6,16 +6,17 @@ import Result from "../../components/Result";
 import PageLayout from "../../layouts/Page";
 
 
-export default function LuasPersegi() {
-    const [side, setSide] = useState(0.0);
+export default function LuasJajarGenjang() {
+    const [base, setBase] = useState(0.0);
+    const [height, setHeight] = useState(0.0);
     const [result, setResult] = useState(0.0);
 
     const meta = {
-        "img": "persegi.jpg"
+        "img": "jajar-genjang.jpg"
     }
 
     function calculate() {
-        let result = parseFloat(side * side);
+        let result = parseFloat(base * height);
         setResult(result);
     }
 
@@ -24,14 +25,23 @@ export default function LuasPersegi() {
             <PageLayout
                 calculationForm={
                     <>
-                        <Title title="Luas Persegi" />
+                        <Title title="Luas Jajar Genjang" />
                         <Input
-                            labelName={"Sisi"}
-                            inputName={"side"}
+                            labelName={"Alas"}
+                            inputName={"base"}
                             type={"number"}
                             placeholder={"0"}
                             onChange={
-                                (e) => setSide(e.target.value)
+                                (e) => setBase(e.target.value)
+                            }
+                        />
+                        <Input
+                            labelName={"Tinggi"}
+                            inputName={"height"}
+                            type={"number"}
+                            placeholder={"0"}
+                            onChange={
+                                (e) => setHeight(e.target.value)
                             }
                         />
                         <SubmitButton onClick={calculate} />

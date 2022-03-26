@@ -6,7 +6,7 @@ import Result from "../../components/Result";
 import PageLayout from "../../layouts/Page";
 
 
-export default function LuasPersegiPanjang() {
+export default function KelilingPersegiPanjang() {
     const [width, setWidth] = useState(0.0);
     const [height, setHeight] = useState(0.0);
     const [result, setResult] = useState(0.0);
@@ -16,7 +16,7 @@ export default function LuasPersegiPanjang() {
     }
 
     function calculate() {
-        let result = parseFloat(width * height);
+        let result = parseFloat((width*2) + (height*2));
         setResult(result);
     }
 
@@ -24,7 +24,7 @@ export default function LuasPersegiPanjang() {
         <PageLayout
             calculationForm={
                 <>
-                    <Title title="Luas Persegi Panjang" />
+                    <Title title="Keliling Persegi Panjang" />
                     <Input
                         labelName={"Panjang"}
                         inputName={"width"}

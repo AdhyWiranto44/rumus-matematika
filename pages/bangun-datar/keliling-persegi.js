@@ -6,7 +6,7 @@ import Result from "../../components/Result";
 import PageLayout from "../../layouts/Page";
 
 
-export default function LuasPersegi() {
+export default function KelilingPersegi() {
     const [side, setSide] = useState(0.0);
     const [result, setResult] = useState(0.0);
 
@@ -15,7 +15,7 @@ export default function LuasPersegi() {
     }
 
     function calculate() {
-        let result = parseFloat(side * side);
+        let result = parseFloat(side * 4);
         setResult(result);
     }
 
@@ -24,7 +24,7 @@ export default function LuasPersegi() {
             <PageLayout
                 calculationForm={
                     <>
-                        <Title title="Luas Persegi" />
+                        <Title title="Keliling Persegi" />
                         <Input
                             labelName={"Sisi"}
                             inputName={"side"}
