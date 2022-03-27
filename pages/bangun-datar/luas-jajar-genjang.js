@@ -3,7 +3,7 @@ import Title from "../../components/Title";
 import Input from "../../components/Input";
 import SubmitButton from "../../components/SubmitButton";
 import Result from "../../components/Result";
-import PageLayout from "../../layouts/Page";
+import PageLayout from "../../layouts/page";
 
 
 export default function LuasJajarGenjang() {
