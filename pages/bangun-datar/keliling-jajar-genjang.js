@@ -19,7 +19,7 @@ export default function KelilingJajarGenjang() {
     }
 
     function calculate() {
-        let result = parseFloat(a+b+c+d);
+        let result = parseFloat(a) + parseFloat(b) + parseFloat(c) + parseFloat(d);
         setResult(result);
     }
 
@@ -27,7 +27,7 @@ export default function KelilingJajarGenjang() {
         <PageLayout
             calculationForm={
                 <>
-                    <Title title="Keliling Persegi Panjang" />
+                    <Title title="Keliling Jajar Genjang" />
                     <Input
                         labelName={"A"}
                         inputName={"a"}
