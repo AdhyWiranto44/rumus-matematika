@@ -14,7 +14,8 @@ export default function KelilingJajarGenjang() {
     const [result, setResult] = useState(0.0);
 
     const meta = {
-        "img": "jajar-genjang.jpg"
+        "img": "jajar-genjang.jpg",
+        "formula": "rumus-keliling-jajar-genjang.jpg"
     }
 
     function calculate() {
@@ -68,6 +69,7 @@ export default function KelilingJajarGenjang() {
                 </>
             }
             imageItem={meta.img}
+            formulaItem={meta.formula}
         />
     );
 }

@@ -29,46 +29,46 @@ export default function Home() {
             "title": "Luas Jajar Genjang",
             "url": "/bangun-datar/luas-jajar-genjang"
         },
-        {
-            "title": "Keliling Segitiga",
-            "url": "/bangun-datar/keliling-segitiga"
-        },
-        {
-            "title": "Luas Segitiga",
-            "url": "/bangun-datar/luas-segitiga"
-        },
-        {
-            "title": "Keliling Belah Ketupat",
-            "url": "/bangun-datar/keliling-belah-ketupat"
-        },
-        {
-            "title": "Luas Belah Ketupat",
-            "url": "/bangun-datar/luas-belah-ketupat"
-        },
-        {
-            "title": "Keliling Layang-Layang",
-            "url": "/bangun-datar/keliling-layang-layang"
-        },
-        {
-            "title": "Luas Layang-Layang",
-            "url": "/bangun-datar/luas-layang-layang"
-        },
-        {
-            "title": "Keliling Trapesium",
-            "url": "/bangun-datar/keliling-trapesium"
-        },
-        {
-            "title": "Luas Trapesium",
-            "url": "/bangun-datar/luas-trapesium"
-        },
-        {
-            "title": "Keliling Lingkaran",
-            "url": "/bangun-datar/keliling-lingkaran"
-        },
-        {
-            "title": "Luas Lingkaran",
-            "url": "/bangun-datar/luas-lingkaran"
-        }
+        // {
+        //     "title": "Keliling Segitiga",
+        //     "url": "/bangun-datar/keliling-segitiga"
+        // },
+        // {
+        //     "title": "Luas Segitiga",
+        //     "url": "/bangun-datar/luas-segitiga"
+        // },
+        // {
+        //     "title": "Keliling Belah Ketupat",
+        //     "url": "/bangun-datar/keliling-belah-ketupat"
+        // },
+        // {
+        //     "title": "Luas Belah Ketupat",
+        //     "url": "/bangun-datar/luas-belah-ketupat"
+        // },
+        // {
+        //     "title": "Keliling Layang-Layang",
+        //     "url": "/bangun-datar/keliling-layang-layang"
+        // },
+        // {
+        //     "title": "Luas Layang-Layang",
+        //     "url": "/bangun-datar/luas-layang-layang"
+        // },
+        // {
+        //     "title": "Keliling Trapesium",
+        //     "url": "/bangun-datar/keliling-trapesium"
+        // },
+        // {
+        //     "title": "Luas Trapesium",
+        //     "url": "/bangun-datar/luas-trapesium"
+        // },
+        // {
+        //     "title": "Keliling Lingkaran",
+        //     "url": "/bangun-datar/keliling-lingkaran"
+        // },
+        // {
+        //     "title": "Luas Lingkaran",
+        //     "url": "/bangun-datar/luas-lingkaran"
+        // }
     ];
     const [searchTerm, setSearchTerm] = useState(menus);
 

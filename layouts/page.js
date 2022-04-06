@@ -5,7 +5,7 @@ import HomeButton from '../components/HomeButton';
 import Script from 'next/script';
 
 
-export default function PageLayout({calculationForm, imageItem}) {
+export default function PageLayout({calculationForm, imageItem, formulaItem}) {
     return (
         <>
             <Head>
@@ -24,7 +24,11 @@ export default function PageLayout({calculationForm, imageItem}) {
                     <div className="col-md-4">
                         {calculationForm}
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-4">
+                        <h5 className="text-center text-uppercase">Rumus</h5>
+                        <img className="d-block mx-auto w-50" src={`/img/${formulaItem}`} alt={formulaItem} />
+                    </div>
+                    <div className="col-md-4">
                         <h5 className="text-center text-uppercase">Gambar</h5>
                         <img className="d-block mx-auto w-50" src={`/img/${imageItem}`} alt={imageItem} />
                     </div>

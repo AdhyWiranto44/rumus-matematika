@@ -12,7 +12,8 @@ export default function LuasJajarGenjang() {
     const [result, setResult] = useState(0.0);
 
     const meta = {
-        "img": "jajar-genjang.jpg"
+        "img": "jajar-genjang.jpg",
+        "formula": "rumus-luas-jajar-genjang.jpg"
     }
 
     function calculate() {
@@ -49,6 +50,7 @@ export default function LuasJajarGenjang() {
                     </>
                 }
                 imageItem={meta.img}
+                formulaItem={meta.formula}
             />
         </>
     );

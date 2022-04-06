@@ -11,7 +11,8 @@ export default function LuasPersegi() {
     const [result, setResult] = useState(0.0);
 
     const meta = {
-        "img": "persegi.jpg"
+        "img": "persegi.jpg",
+        "formula": "rumus-luas-persegi.jpg"
     }
 
     function calculate() {
@@ -39,6 +40,7 @@ export default function LuasPersegi() {
                     </>
                 }
                 imageItem={meta.img}
+                formulaItem={meta.formula}
             />
         </>
     );

@@ -12,7 +12,8 @@ export default function LuasPersegiPanjang() {
     const [result, setResult] = useState(0.0);
 
     const meta = {
-        "img": "persegi-panjang.jpg"
+        "img": "persegi-panjang.jpg",
+        "formula": "rumus-luas-persegi-panjang.jpg"
     }
 
     function calculate() {
@@ -48,6 +49,7 @@ export default function LuasPersegiPanjang() {
                 </>
             }
             imageItem={meta.img}
+            formulaItem={meta.formula}
         />
     );
 }
